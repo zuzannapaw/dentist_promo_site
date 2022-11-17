@@ -1,9 +1,8 @@
+import Header from "./header/Header"
 
 const AboutUs = () => {
     return (
-        <div>
-            hello
-        </div>
+       <Header/>
     )
 }
 
