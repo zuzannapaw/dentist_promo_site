@@ -1,6 +1,6 @@
 html,body {
   margin: 0;
-  background-color: #202024;
+  background-color: white;
   font-family: "Quicksand", sans-serif;
  
 }
@@ -8,4 +8,13 @@ html,body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img.main-image{
+  width: 100vw;
+  height:calc(100vh - 72px)
+}
+
+img.card-image{
+  width:100%;
 }
