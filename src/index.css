@@ -10,11 +10,16 @@ code {
     monospace;
 }
 
-img.main-image{
+.main-image{
   width: 100vw;
-  height:calc(100vh - 72px)
+  height:calc(100vh - 72px);
+  background: url("https://cdn.pixabay.com/photo/2020/09/09/12/18/dental-care-5557438_960_720.jpg");
+  background-size: contain;
 }
 
 img.card-image{
   width:100%;
 }
+
+
+

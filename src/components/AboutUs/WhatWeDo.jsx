@@ -10,7 +10,7 @@ const WhatWeDo = () => {
                 <Typography style={{color:"white", fontSize:"4em", fontWeight: "100" , fontFamily:"QuickSand, sans-serif"}}>We are here for You</Typography>
                 <Typography style={{color:"white", fontSize:"1.5em", fontFamily:"QuickSand, sans-serif" }} >We invite you to familiarize yourself with the offert</Typography>
             </Stack>
-            <Box style={{ height: "100vh", width: "90%" }}>
+            <Box style={{ height: "auto", width: "90%" }}>
                 <Stack gap={7} mt={8} ml={28}  >
                     <Grid container spacing={24}>
                         <GridElement source={"https://cdn.pixabay.com/photo/2016/09/02/16/17/dentist-1639683_960_720.jpg"} title={"Implants"} description={"Specialized doctors will help you choose the right implants and crowns for your type of bite to enjoy full teeth again."}/>

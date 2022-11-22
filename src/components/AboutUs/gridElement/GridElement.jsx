@@ -8,10 +8,10 @@ const GridElement= (props)=>{
             <Typography style={{ fontSize:"1.5em", textAlign:"center",fontFamily:"QuickSand,sans-serif"}}>
                 {props.title}
             </Typography>
-            <Typography  style={{ fontSize:"1em", lineHeight:"2.3em", padding: "10px", marginTop: "-15%",fontFamily:"QuickSand,sans-serif",alignJustify:"justify"}}>
+            <Typography  style={{ fontSize:"1em", lineHeight:"2.3em", padding: "10px", marginTop: "-15%",marginLeft:"6%",fontFamily:"QuickSand,sans-serif",alignJustify:"justify"}}>
                 {props.description}
             </Typography>
-            <Button variant="contained" style={{ marginBottom: "10%", width: "80%"}} >More</Button>
+            <Button variant="contained" style={{ marginBottom: "10%", width: "80%", backgroundColor:"#67C9CB",fontFamily:"QuickSand,sans-serif",letterSpacing:"3px"}} >More</Button>
         </Paper>
     </Grid>
     )

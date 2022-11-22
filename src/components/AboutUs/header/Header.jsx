@@ -4,8 +4,8 @@ import { Box} from "@mui/material"
 const Header = () => {
     return (
         <Box>
-            <Box sx={{ display: "flex", height: '50%', alignItems: "space-between", transition: "5s",overflow: "hidden"}}>
-                <img className="main-image" src="https://cdn.pixabay.com/photo/2020/09/09/12/18/dental-care-5557438_960_720.jpg" alt="dentist"></img>
+            <Box sx={{ display: "flex", height: '50%', alignItems: "space-between", transition: "5s",overflow: "hidden", position: "covered"}}>
+                <Box className="main-image" alt="dentist"></Box>
             </Box>
         </Box>
     )
