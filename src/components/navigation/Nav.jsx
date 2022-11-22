@@ -15,7 +15,7 @@ const pages= ["About Us", "Gallery", "Contact","Price List", "Contact"]
 
 const Nav = ()=>{
     return(
-        <AppBar position="static" sx={{bgcolor:"#67C9CB"}}>
+        <AppBar position="sticky" sx={{bgcolor:"#67C9CB"}}>
       <Container maxWidth="xl" sx={{ml:0}} >
         <Toolbar disableGutters>
           <LocalLibraryIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 ,height:60}} />
