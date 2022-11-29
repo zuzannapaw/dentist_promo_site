@@ -10,15 +10,15 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 
-const pages= ["About Us", "Gallery", "Contact","Price List", "Contact"]
+const pages = ["About Us", "Gallery", "Contact", "Price List", "Contact"]
 
 
-const Nav = ()=>{
-    return(
-        <AppBar position="sticky" sx={{bgcolor:"#67C9CB"}}>
-      <Container maxWidth="xl" sx={{ml:0}} >
+const Nav = () => {
+  return (
+    <AppBar position="sticky" sx={{ bgcolor: "#67C9CB" }}>
+      <Container maxWidth="xl" sx={{ ml: 0 }} >
         <Toolbar disableGutters>
-          <LocalLibraryIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 ,height:60}} />
+          <LocalLibraryIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, height: 60 }} />
           <Typography
             variant="h6"
             noWrap
@@ -32,10 +32,10 @@ const Nav = ()=>{
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              fontSize:25, 
+              fontSize: 25,
             }}
           >
-            toothless 
+            toothless
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, }}>
@@ -71,7 +71,7 @@ const Nav = ()=>{
             </Menu>
           </Box>
 
-          <LocalLibraryIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 ,height: 30}} />
+          <LocalLibraryIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, height: 30 }} />
           <Typography
             variant="h5"
             noWrap
@@ -91,29 +91,33 @@ const Nav = ()=>{
           >
             toothless
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, ml:10,gap:4 }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, ml: 10, gap: 4 }}>
             {pages.map((page) => (
               <Button
                 key={page}
-                sx={{ my: 2, color: 'white', display: 'block', fontSize: 16 ,fontFamily:"Quicksand", "&:hover" : {
-                  bgcolor: "rgba(255,255,255,0.2)"
-                }} }
+                sx={{
+                  my: 2, color: 'white', display: 'block', fontSize: 16, fontFamily: "Quicksand", "&:hover": {
+                    bgcolor: "rgba(255,255,255,0.2)"
+                  }
+                }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-          <Box sx={{display:"flex", mr: {md:-40,xs:0}}}>
-              <Typography sx={{display: { xs: 'none', md: 'inline' }, mr: 10, fontWeight: 600, lineHeight:2}} fontSize = "18px" component="div" fontFamily="Quicksand" letterSpacing="3px"> +91 765 777 282</Typography>
-              <Button sx={{display: { xs: 'none', md: 'block'}, fontSize: 15, color: "white", border: "1px solid white", "&:hover" : {
-                  bgcolor: "#516363", border: "1px solid #516363"
-                }}} variant="outlined">Make an appointment</Button>
+          <Box sx={{ display: "flex", mr: { md: -40, xs: 0 } }}>
+            <Typography sx={{ display: { xs: 'none', md: 'inline' }, mr: 10, fontWeight: 600, lineHeight: 2 }} fontSize="18px" component="div" fontFamily="Quicksand" letterSpacing="3px"> +91 765 777 282</Typography>
+            <Button sx={{
+              display: { xs: 'none', md: 'block' }, fontSize: 15, color: "white", border: "1px solid white", "&:hover": {
+                bgcolor: "#516363", border: "1px solid #516363"
+              }
+            }} variant="outlined">Make an appointment</Button>
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
 
-    )
+  )
 }
 
 export default Nav
