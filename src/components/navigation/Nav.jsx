@@ -9,8 +9,10 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import { NavLink } from 'react-router-dom';
 
-const pages = ["About Us", "Gallery", "Contact", "Price List", "Contact"]
+const pages = ["About Us", "Gallery", "Contact", "Price List",]
+const pagesPaths = ["/", "/gallery", "/contact", "/price-list",]
 
 
 const Nav = () => {
@@ -65,7 +67,7 @@ const Nav = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <NavLink to={pagesPaths[page]}>{page}</NavLink>
                 </MenuItem>
               ))}
             </Menu>
