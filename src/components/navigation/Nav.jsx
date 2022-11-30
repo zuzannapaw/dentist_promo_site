@@ -65,9 +65,9 @@ const Nav = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {pages.map((page,index) => (
                 <MenuItem key={page}>
-                  <NavLink to={pagesPaths[page]}>{page}</NavLink>
+                  <NavLink to={pagesPaths[index]}>{page}</NavLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -94,16 +94,18 @@ const Nav = () => {
             toothless
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, ml: 10, gap: 4 }}>
-            {pages.map((page) => (
+            {pages.map((page,index) => (
               <Button
                 key={page}
                 sx={{
-                  my: 2, color: 'white', display: 'block', fontSize: 16, fontFamily: "Quicksand", "&:hover": {
+                  my: 2, display: 'block', fontSize: 16, fontFamily: "Quicksand", "&:hover": {
                     bgcolor: "rgba(255,255,255,0.2)"
                   }
                 }}
               >
-                {page}
+                <NavLink to={pagesPaths[index]} style={{textDecoration:"none",color:"white"}}>
+                  {page}
+                </NavLink>
               </Button>
             ))}
           </Box>
