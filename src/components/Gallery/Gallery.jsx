@@ -60,7 +60,7 @@ const Gallery = () => {
                 <Typography style={{ fontSize: "2.7rem", fontFamily: "QuickSand,sans-serif", }}>Our patients,office and smiles</Typography>
                 <Typography style={{ fontSize: "1.5rem", fontFamily: "QuickSand,sans-serif", }}>Gallery of Toothless Dental Office</Typography>
             </Box>
-            <ImageList sx={{ width: 1000, height: 800 }} variant="woven" cols={3} gap={8}>
+            <ImageList sx={{ width: 1200, height: 800 }} variant="woven" cols={3} gap={8}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>
                         <img
